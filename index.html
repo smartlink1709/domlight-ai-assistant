@@ -1,0 +1,215 @@
+﻿<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ДомЛайт — меньше уборки, больше жизни</title>
+.messages > .bubble {
+flex: 0 0 auto;
+position: static;
+overflow: visible;
+box-shadow: none;
+border: none;
+}
+<style>
+:root{--ink:#243b35;--muted:#6c7c75;--green:#275b49;--line:#dce3dc;--bg:#f6f7f2;--lime:#dcf0aa}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);font:15px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink)}button,input,select{font:inherit}button,a,input,select{touch-action:manipulation}button{cursor:pointer;border:0}button:disabled{opacity:.55;cursor:wait}button:focus-visible,a:focus-visible{outline:3px solid #94af52;outline-offset:4px}a{color:inherit;text-decoration:none}.wrap{max-width:1320px;margin:auto;padding:0 40px}.demo{background:#263e36;color:#e6eddf;text-align:center;font-size:11px;letter-spacing:.07em;padding:9px 16px}.demo span{opacity:.65}header{height:86px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:25px;font-weight:750;letter-spacing:-1.3px;display:flex;align-items:center;gap:10px}.brand b{font-size:23px;color:white;background:var(--green);border-radius:11px;padding:0 7px}.nav{display:flex;gap:30px;font-size:13px}.btn{border-radius:9px;background:var(--green);color:white;padding:12px 20px;font-weight:600;font-size:13px;display:inline-flex;align-items:center;justify-content:center;gap:10px}.btn.light{background:transparent;color:var(--ink);border:1px solid #c8d3c8}.btn.lime{background:var(--lime);color:#29482f}.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:35px;padding:62px 0 44px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:var(--green);font-weight:700}.pill{display:inline-block;border:1px solid #cbd8bd;border-radius:20px;padding:6px 12px;font-size:11px;margin-bottom:18px;background:#edf3e4}.pill:before{content:'●';color:#6e963b;margin-right:7px}h1{font-size:clamp(36px,4.2vw,61px);line-height:1.07;letter-spacing:-2.5px;font-weight:550;margin:0 0 22px}h1 em{font-family:Georgia,serif;font-weight:400;color:#64805e}p{margin:0 0 20px}.intro{font-size:15px;max-width:420px;color:var(--muted)}.actions{display:flex;gap:12px;flex-wrap:wrap}.micro{display:flex;gap:23px;font-size:11px;color:var(--muted);margin-top:25px}.scene{min-height:365px;position:relative;background:linear-gradient(135deg,#e7ebdf,#d4dfcc);border-radius:26px;overflow:hidden}.scene:before{content:'';position:absolute;left:-5%;right:-5%;height:180px;bottom:-25px;background:repeating-linear-gradient(95deg,#c7cdbb 0,#c7cdbb 2px,#e4e3d4 3px,#e4e3d4 77px);transform:rotate(-8deg)}.scene:after{content:'';position:absolute;width:190px;height:190px;background:#73876b;opacity:.25;border-radius:50%;top:-105px;right:-25px}.scene .robot{width:230px;height:230px;position:absolute;left:24%;top:80px;transform:rotate(-17deg);box-shadow:15px 35px 20px #47523a33}.scene-label{position:absolute;top:23px;left:25px;font-size:11px;letter-spacing:.12em;color:#5b6c50}.floating{position:absolute;z-index:2;right:20px;bottom:24px;padding:15px 19px;border-radius:13px;background:#fffffff0;box-shadow:0 8px 30px #44522b10;font-size:11px;max-width:220px}.floating strong{display:block;font-size:13px;margin:3px 0}.robot{--shell:#e4e9dd;position:relative;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle at 30% 24%,#fff 0,var(--shell) 48%,#afb8a5 90%);border:5px solid #bdc6b5;box-shadow:0 15px 18px #203b3219,inset 0 0 0 5px #ffffff65;flex-shrink:0}.robot:before{content:'';position:absolute;inset:18%;border:1px solid #82907855;border-radius:50%}.robot:after{content:'DOMLIGHT';position:absolute;bottom:27%;width:100%;text-align:center;font-size:9px;letter-spacing:2px;color:#536348}.lidar{position:absolute;width:25%;height:25%;border-radius:50%;top:13%;left:37.5%;background:linear-gradient(145deg,#fcfff6,#aab8a1);border:5px solid #c2cdb8;box-shadow:0 6px 7px #4d614a33}.robot.cream{--shell:#ede4d4;border-color:#d0c6b3}.robot.charcoal{--shell:#46524d;background:radial-gradient(circle at 30% 24%,#7e8981,#38463d 70%);border-color:#445046}.robot.charcoal:after{color:#d1ddcb}.robot.charcoal .lidar{background:#44564a;border-color:#64735f}.benefits{display:grid;grid-template-columns:repeat(3,1fr);padding:22px 0 32px;border-bottom:1px solid var(--line);gap:25px}.benefit{display:flex;gap:12px;align-items:center}.icon{background:#e9eddf;border-radius:11px;width:40px;height:40px;display:grid;place-items:center;font-size:20px}.benefit strong{font-size:12px;display:block}.benefit small{font-size:11px;color:var(--muted)}.shopping{display:grid;grid-template-columns:minmax(0,1fr) 350px;gap:28px;margin:44px 0 60px;align-items:start}.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:22px;gap:12px}h2{font-size:27px;letter-spacing:-.9px;font-weight:550;margin:4px 0 0}.count{font-size:11px;color:var(--muted)}.filters{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}.chip{padding:7px 12px;border-radius:20px;border:1px solid var(--line);background:transparent;color:var(--muted);font-size:11px}.chip.active{background:var(--green);color:white;border-color:var(--green)}.toolbar{display:flex;gap:10px;margin-bottom:20px}input,select{border:1px solid var(--line);border-radius:8px;background:white;padding:10px;font-size:12px;min-width:0;color:var(--ink)}.toolbar input{flex:1}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:white;border:1px solid var(--line);border-radius:17px;overflow:hidden}.product-art{height:209px;background:#eef1e7;display:grid;place-items:center;position:relative}.product-art .robot{transform:rotate(-12deg);width:140px;height:140px}.badge{position:absolute;top:13px;left:13px;background:#ffffffd9;border-radius:20px;padding:5px 9px;font-size:9px;color:#506649}.card-body{padding:17px}.card h3{font-size:19px;margin:0;letter-spacing:-.5px}.card p{font-size:11px;color:var(--muted);margin:3px 0 13px;min-height:33px}.specs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:17px}.specs span{font-size:10px;background:#f4f5ee;padding:4px 7px;border-radius:5px}.price{font-size:21px;font-weight:650;letter-spacing:-.7px}.card-bottom{display:flex;justify-content:space-between;align-items:center;gap:10px}.card-bottom .btn{padding:9px 12px;font-size:11px}.compare-label{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:5px;padding-top:12px;cursor:pointer}.compare-label input{accent-color:var(--green)}.assistant{position:sticky;top:20px;border:1px solid #cfdbc9;border-radius:18px;background:white;overflow:hidden;box-shadow:0 10px 35px #31462406}.chat-head{background:#edf3e6;padding:19px;border-bottom:1px solid #dce6d5;display:flex;gap:11px;align-items:center}.avatar{background:var(--green);color:var(--lime);border-radius:12px;width:40px;height:40px;display:grid;place-items:center;font-size:24px}.chat-head strong{font-size:13px}.chat-head small{display:block;color:#697b5a;font-size:10px;margin-top:3px}.chat-head button{margin-left:auto;background:transparent;color:#68815e;font-size:19px;padding:7px}.messages{height:355px;overflow-y:auto;padding:17px;display:flex;flex-direction:column;gap:13px}.bubble{flex:0 0 auto;min-width:0;white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;line-height:1.65;max-width:96%;border-radius:0 12px 12px 12px;padding:12px;background:#f1f4eb}.bubble.user{align-self:flex-end;background:#2d5c49;color:white;border-radius:12px 0 12px 12px}.bubble .author{display:block;font-size:9px;opacity:.65;margin-bottom:4px}.suggestions{display:flex;gap:6px;padding:0 15px 12px;flex-wrap:wrap}.suggestions button{font-size:10px;background:white;color:#4f6f40;border:1px solid #d9e4cd;padding:6px 8px;border-radius:7px}.chat-form{display:flex;gap:8px;padding:12px 14px;border-top:1px solid var(--line)}.chat-form input{flex:1;border:0;padding:9px 0;outline-offset:2px}.chat-form button{width:36px;border-radius:9px;background:var(--green);color:white;font-size:20px}.chat-status{font-size:10px;padding:0 15px;color:#986628;min-height:15px}.privacy{font-size:9px;text-align:center;color:#7a8576;padding:6px 14px 14px;margin:0}.portfolio{background:#e8eddf;border-radius:20px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:45px}.portfolio p{max-width:660px;font-size:13px;color:#60715b;margin:10px 0 0}footer{padding:24px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}dialog{border:1px solid var(--line);border-radius:18px;padding:26px;max-width:850px;width:90%;color:var(--ink)}dialog::backdrop{background:#1b302d88}table{width:100%;border-collapse:collapse;font-size:12px;margin:20px 0}th,td{text-align:left;border-bottom:1px solid var(--line);padding:12px}dialog .actions{justify-content:flex-end}#compare-bar{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:5;padding:10px 16px;background:#263e36;color:white;border-radius:12px;box-shadow:0 6px 30px #243b3533;font-size:12px;display:flex;gap:20px;align-items:center}[hidden]{display:none!important}.empty{padding:30px;background:white;border-radius:12px;color:var(--muted)}
+@media(min-width:1250px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.product-art{height:190px}.card-bottom{align-items:start;flex-direction:column}}
+@media(max-width:1000px){.wrap{padding:0 25px}.shopping{grid-template-columns:minmax(0,1fr) 320px;gap:20px}.hero{gap:20px}.scene .robot{left:15%}.micro{gap:10px}.nav{gap:15px}.card-bottom{flex-direction:column;align-items:start}.benefit small{display:none}}
+@media(max-width:760px){.wrap{padding:0 18px}header{height:73px}.nav{display:none}.hero{grid-template-columns:1fr;padding-top:30px;gap:28px}.scene{min-height:280px}.scene .robot{width:180px;height:180px;top:55px;left:25%}h1{font-size:44px}.benefits{gap:8px}.benefit{gap:6px}.benefit strong{font-size:10px}.icon{width:30px;height:30px;font-size:15px}.shopping{grid-template-columns:1fr}.assistant{position:relative;top:0;grid-row:1}.messages{height:280px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.toolbar{flex-wrap:wrap}.toolbar input{min-width:150px}.portfolio{display:block;padding:23px}.portfolio .btn{margin-top:20px}footer{gap:20px}.product-art{height:170px}.product-art .robot{width:120px;height:120px}.card-body{padding:13px}.badge{font-size:8px}#compare-bar{width:90%;justify-content:space-between}.hero .micro{font-size:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<div class="demo">ПОРТФОЛИО-ПРОЕКТ <span>· Вымышленный магазин. Учебные товары и цены. Без оплаты.</span></div>
+<div class="wrap"><header><a class="brand" href="#"><b>⌂</b>ДомЛайт</a><nav class="nav"><a href="#catalog">Роботы-пылесосы</a><a href="#assistant">Помощь с выбором</a><a href="#about">О проекте</a></nav><a class="btn light" href="#assistant">Подобрать с AI ↗</a></header>
+<section class="hero"><div><div class="pill">Умный подход к чистому дому</div><h1>Меньше уборки.<br>Больше <em>жизни.</em></h1><p class="intro">Найдите робот-пылесос для вашего дома. Расскажите о привычках — консультант поможет разобраться в деталях.</p><div class="actions"><a class="btn" href="#assistant">Помогите мне выбрать <span>↗</span></a><a class="btn light" href="#catalog">Смотреть каталог</a></div><div class="micro"><span>✓ Подбор по вашим условиям</span><span>✓ Понятное сравнение</span></div></div><div class="scene" aria-label="Иллюстрация робота-пылесоса ДомЛайт"><div class="scene-label">CLEAN HOME. CLEAR MIND.</div><div class="robot cream"><i class="lidar"></i></div><div class="floating">✦ ПОДБОР ПОД ВАШ ДОМ<strong>Кошка, ковры, 60 м²?</strong>Учтём детали, которые важны вам.</div></div></section>
+<div class="benefits"><div class="benefit"><span class="icon">⌂</span><div><strong>Под ваш дом</strong><small>Площадь, покрытия и питомцы</small></div></div><div class="benefit"><span class="icon">≋</span><div><strong>Без сложных терминов</strong><small>Объясняем различия моделей</small></div></div><div class="benefit"><span class="icon">↗</span><div><strong>С поддержкой менеджера</strong><small>Сохраняем ваши пожелания</small></div></div></div>
+<div class="shopping"><section id="catalog"><div class="section-head"><div><span class="eyebrow">Коллекция чистого дома</span><h2>Найдите своего помощника</h2></div><span class="count" id="count"></span></div><div class="filters" aria-label="Фильтры каталога"><button class="chip active" data-filter="all" aria-pressed="true">Все модели</button><button class="chip" data-filter="pets" aria-pressed="false">Для питомцев</button><button class="chip" data-filter="wet" aria-pressed="false">Влажная уборка</button><button class="chip" data-filter="station" aria-pressed="false">Со станцией</button></div><div class="toolbar"><input id="search" type="search" aria-label="Поиск по названию" placeholder="Поиск модели…"><select id="sort" aria-label="Сортировка"><option value="price">Сначала доступнее</option><option value="expensive">Сначала дороже</option><option value="area">По площади уборки</option></select></div><div class="cards" id="cards"></div></section>
+<aside class="assistant" id="assistant"><div class="chat-head"><div class="avatar">✦</div><div><strong>Ваш помощник ДомЛайт</strong><small id="mode-label">Подбор по вашим пожеланиям</small></div><button id="new-chat" title="Начать новый чат" aria-label="Начать новый чат">↻</button></div><div class="messages" id="messages" role="log" aria-live="polite"></div><div class="suggestions"><button data-prompt="Квартира 60 м², есть кошка, бюджет до 30 000 ₽">Квартира + кошка</button><button data-prompt="Бюджет до 20 000 ₽">До 20 000 ₽</button><button data-prompt="Позовите менеджера">Менеджер</button></div><form id="chat-form" class="chat-form"><input id="message" maxlength="2000" required aria-label="Сообщение консультанту" placeholder="Что важно для вашего дома?"><button id="send" aria-label="Отправить сообщение">↑</button></form><div id="status" class="chat-status" role="status"></div><p class="privacy">Только вымышленные контакты. Демо-номер: +7 000 000-00-00.<br>Диалог сохраняется при запуске приложения.</p></aside></div>
+<section class="portfolio" id="about"><div><span class="eyebrow">От диалога до заявки</span><h2>Магазин, который помогает выбрать</h2><p>Демонстрация AI-консультанта: каталог → подбор по условиям → выбор модели → тестовая заявка менеджеру. Товары и цены вымышлены; реальная покупка не предусмотрена.</p></div><a class="btn light" href="#assistant">Попробовать подбор ↗</a></section><footer><span>© ДомЛайт · учебный проект Ларисы</span><span>Иллюстрации условные · Не интернет-магазин</span></footer></div>
+<div id="compare-bar" hidden><span id="compare-count"></span><button class="btn lime" id="compare-open">Сравнить модели →</button></div><dialog id="comparison"><h2>Сравним по делу</h2><div style="overflow-x:auto" id="comparison-table"></div><div class="actions"><button class="btn light" id="compare-clear">Очистить</button><button class="btn" id="compare-close">Закрыть</button></div></dialog>
+<script id="catalog-data" type="application/json">[
+  {
+    "id": "dl-mini",
+    "name": "DL Mini",
+    "price": 12990,
+    "area": 40,
+    "wet": false,
+    "carpet": false,
+    "pets": false,
+    "power": 1800,
+    "station": false,
+    "color": "sage",
+    "tag": "Для небольших квартир",
+    "description": "Демонстрационная модель для площади до 40 м². Для повседневной уборки."
+  },
+  {
+    "id": "dl-start",
+    "name": "DL Start",
+    "price": 16990,
+    "area": 55,
+    "wet": true,
+    "carpet": false,
+    "pets": false,
+    "power": 2500,
+    "station": false,
+    "color": "cream",
+    "tag": "Лёгкий старт",
+    "description": "Демонстрационная модель для площади до 55 м². Для повседневной уборки."
+  },
+  {
+    "id": "dl-city",
+    "name": "DL City",
+    "price": 19990,
+    "area": 65,
+    "wet": true,
+    "carpet": true,
+    "pets": false,
+    "power": 3000,
+    "station": false,
+    "color": "charcoal",
+    "tag": "Для города",
+    "description": "Демонстрационная модель для площади до 65 м². Для повседневной уборки."
+  },
+  {
+    "id": "dl-pet",
+    "name": "DL Pet",
+    "price": 24990,
+    "area": 75,
+    "wet": true,
+    "carpet": true,
+    "pets": true,
+    "power": 4000,
+    "station": false,
+    "color": "sage",
+    "tag": "Дом с питомцами",
+    "description": "Демонстрационная модель для площади до 75 м². Подходит для уборки шерсти."
+  },
+  {
+    "id": "dl-balance",
+    "name": "DL Balance",
+    "price": 27990,
+    "area": 90,
+    "wet": true,
+    "carpet": true,
+    "pets": true,
+    "power": 4500,
+    "station": false,
+    "color": "cream",
+    "tag": "Баланс возможностей",
+    "description": "Демонстрационная модель для площади до 90 м². Подходит для уборки шерсти."
+  },
+  {
+    "id": "dl-quiet",
+    "name": "DL Quiet",
+    "price": 29990,
+    "area": 80,
+    "wet": true,
+    "carpet": false,
+    "pets": true,
+    "power": 3500,
+    "station": false,
+    "color": "charcoal",
+    "tag": "Для твёрдых полов",
+    "description": "Демонстрационная модель для площади до 80 м². Подходит для уборки шерсти."
+  },
+  {
+    "id": "dl-plus",
+    "name": "DL Plus",
+    "price": 32990,
+    "area": 100,
+    "wet": true,
+    "carpet": true,
+    "pets": true,
+    "power": 5000,
+    "station": false,
+    "color": "sage",
+    "tag": "Больше пространства",
+    "description": "Демонстрационная модель для площади до 100 м². Подходит для уборки шерсти."
+  },
+  {
+    "id": "dl-station",
+    "name": "DL Station",
+    "price": 37990,
+    "area": 110,
+    "wet": true,
+    "carpet": true,
+    "pets": true,
+    "power": 5500,
+    "station": true,
+    "color": "cream",
+    "tag": "Со станцией",
+    "description": "Демонстрационная модель для площади до 110 м². Подходит для уборки шерсти."
+  },
+  {
+    "id": "dl-mop",
+    "name": "DL Mop",
+    "price": 39990,
+    "area": 100,
+    "wet": true,
+    "carpet": false,
+    "pets": true,
+    "power": 5000,
+    "station": false,
+    "color": "charcoal",
+    "tag": "Влажная уборка",
+    "description": "Демонстрационная модель для площади до 100 м². Подходит для уборки шерсти."
+  },
+  {
+    "id": "dl-max",
+    "name": "DL Max",
+    "price": 44990,
+    "area": 130,
+    "wet": true,
+    "carpet": true,
+    "pets": true,
+    "power": 6000,
+    "station": true,
+    "color": "sage",
+    "tag": "Большой дом",
+    "description": "Демонстрационная модель для площади до 130 м². Подходит для уборки шерсти."
+  },
+  {
+    "id": "dl-ultra",
+    "name": "DL Ultra",
+    "price": 54990,
+    "area": 150,
+    "wet": true,
+    "carpet": true,
+    "pets": true,
+    "power": 7000,
+    "station": true,
+    "color": "cream",
+    "tag": "Максимум возможностей",
+    "description": "Демонстрационная модель для площади до 150 м². Подходит для уборки шерсти."
+  },
+  {
+    "id": "dl-studio",
+    "name": "DL Studio",
+    "price": 14990,
+    "area": 45,
+    "wet": false,
+    "carpet": false,
+    "pets": true,
+    "power": 2200,
+    "station": false,
+    "color": "charcoal",
+    "tag": "Компактный",
+    "description": "Демонстрационная модель для площади до 45 м². Подходит для уборки шерсти."
+  }
+]</script>
+<script>
+const products=JSON.parse(document.getElementById('catalog-data').textContent);
+const $=id=>document.getElementById(id);let filter='all';const selected=new Set();
+function renderCatalog(){let list=products.filter(p=>(filter==='all'||p[filter])&&p.name.toLowerCase().includes($('search').value.trim().toLowerCase()));list.sort((a,b)=>$('sort').value==='expensive'?b.price-a.price:$('sort').value==='area'?b.area-a.area:a.price-b.price);$('count').textContent=list.length+' моделей';$('cards').replaceChildren();if(!list.length){const p=document.createElement('p');p.className='empty';p.textContent='Таких моделей не найдено. Измените поиск или фильтр.';$('cards').append(p)}for(const p of list){const card=document.createElement('article');card.className='card';card.innerHTML=`<div class="product-art"><span class="badge">${p.tag}</span><div class="robot ${p.color}" role="img" aria-label="Условная иллюстрация ${p.name}"><i class="lidar"></i></div></div><div class="card-body"><h3>${p.name}</h3><p>${p.description}</p><div class="specs"><span>до ${p.area} м²</span><span>${p.wet?'Сухая + влажная':'Сухая уборка'}</span></div><div class="card-bottom"><span class="price">${p.price.toLocaleString('ru-RU')} ₽</span><button class="btn choose">Выбрать ↗</button></div><label class="compare-label"><input type="checkbox" ${selected.has(p.id)?'checked':''}>Сравнить модель</label></div>`;card.querySelector('.choose').onclick=()=>promptChat('Выбираю '+p.name);card.querySelector('input').onchange=e=>{if(e.target.checked&&selected.size>=3){e.target.checked=false;$('status').textContent='Для сравнения выберите не более 3 моделей.';return}e.target.checked?selected.add(p.id):selected.delete(p.id);updateCompare()};$('cards').append(card)}}
+function updateCompare(){$('compare-bar').hidden=!selected.size;$('compare-count').textContent='В сравнении: '+selected.size+' / 3'}
+document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))});renderCatalog()});$('search').oninput=renderCatalog;$('sort').onchange=renderCatalog;
+$('compare-open').onclick=()=>{const list=products.filter(p=>selected.has(p.id));const fields=[['Цена, учебная','price'],['Площадь, м²','area'],['Влажная уборка','wet'],['Для шерсти','pets'],['Короткий ворс','carpet'],['Станция сбора пыли','station']];$('comparison-table').innerHTML='<table><thead><tr><th>Характеристика</th>'+list.map(p=>'<th>'+p.name+'</th>').join('')+'</tr></thead><tbody>'+fields.map(([label,key])=>'<tr><th>'+label+'</th>'+list.map(p=>'<td>'+(typeof p[key]==='boolean'?(p[key]?'Да':'Нет'):p[key].toLocaleString('ru-RU'))+'</td>').join('')+'</tr>').join('')+'</tbody></table>';$('comparison').showModal()};$('compare-close').onclick=()=>$('comparison').close();$('compare-clear').onclick=()=>{selected.clear();updateCompare();renderCatalog();$('comparison').close()};
+let chatId=null,pending=null,busy=false;const offline=location.protocol==='file:';const storageKey='domlight-chat-v1';
+function bubble(text,role='assistant'){const el=document.createElement('div');el.className='bubble '+(role==='assistant'?'bot-message':role);const label=document.createElement('span');label.className='author';label.textContent=role==='user'?'ВЫ':role==='manager'?'МЕНЕДЖЕР':'ДОМЛАЙТ';el.append(label,document.createTextNode(text));$('messages').append(el);$('messages').scrollTop=$('messages').scrollHeight}
+function welcome(){bubble('Здравствуйте! Помогу выбрать робот-пылесос. Расскажите о площади квартиры, бюджете и о том, есть ли дома животные.');if(offline)bubble('Это просмотр интерфейса. Каталог и сравнение работают. Для настоящего диалога запустите приложение по инструкции README.');}
+function setBusy(v){busy=v;$('send').disabled=v||offline||!chatId;$('new-chat').disabled=v||offline;$('message').disabled=v||offline;document.querySelectorAll('[data-prompt]').forEach(b=>b.disabled=v||offline)}
+function save(){try{localStorage.setItem(storageKey,JSON.stringify({chatId,pending}))}catch{}}
+async function api(url,body){const r=await fetch(url,{method:body===undefined?'GET':'POST',headers:{'Content-Type':'application/json'},...(body===undefined?{}:{body:JSON.stringify(body)}),signal:AbortSignal.timeout(90000),cache:'no-store'});let data;try{data=await r.json()}catch{throw new Error('Сервер вернул неожиданный ответ. Проверьте запуск приложения.')}if(!r.ok)throw new Error(typeof data.detail==='string'?data.detail:'Не удалось выполнить запрос.');return data}
+async function history(){const data=await api('/api/chats/'+chatId+'/messages');$('messages').replaceChildren();if(!data.messages.length)welcome();for(const row of data.messages)bubble(row.content,row.role)}
+async function newChat(){const data=await api('/api/chats',{});chatId=data.chat_id;pending=null;save();$('message').value='';$('messages').replaceChildren();welcome()}
+function promptChat(text){$('assistant').scrollIntoView({behavior:'smooth',block:'center'});if(offline){$('status').textContent='Для диалога запустите приложение. В этом файле доступен просмотр каталога.';return}if(busy)return;$('message').value=text;$('message').focus()}
+document.querySelectorAll('[data-prompt]').forEach(b=>b.onclick=()=>promptChat(b.dataset.prompt));
+$('new-chat').onclick=async()=>{if(busy)return;setBusy(true);try{await newChat();$('status').textContent=''}catch(e){$('status').textContent=e.message}finally{setBusy(false)}};
+$('chat-form').onsubmit=async e=>{e.preventDefault();if(busy||offline||!chatId)return;const message=$('message').value.trim();if(!message)return;setBusy(true);$('status').textContent='Подбираем ответ…';try{if(!pending||pending.message!==message)pending={request_id:crypto.randomUUID(),message};save();const response=await api('/api/chat',{chat_id:chatId,...pending});await history();pending=null;save();$('message').value='';$('status').textContent=response.paused?'Автоответы приостановлены. Обращение ожидает менеджера.':''}catch(e){$('status').textContent=e.name==='TimeoutError'?'Ответ задерживается. Повторите отправку — сообщение не продублируется.':e.message}finally{setBusy(false);$('message').focus()}};
+async function initialize(){renderCatalog();if(offline){welcome();$('mode-label').textContent='Просмотр интерфейса · без подключения';setBusy(false);return}setBusy(true);try{try{const state=JSON.parse(localStorage.getItem(storageKey)||'null');if(state){chatId=state.chatId;pending=state.pending}}catch{}if(!chatId)await newChat();await history();if(pending){$('message').value=pending.message;$('status').textContent='Предыдущая отправка не подтверждена. Повторите её.'}}catch(e){$('status').textContent=e.message;if(!$('messages').childNodes.length)welcome()}finally{setBusy(false)}}initialize();
+</script></body></html>
+
